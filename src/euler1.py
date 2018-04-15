@@ -9,7 +9,7 @@ def sum_factors(divisor, num):
 def sumOfMultiplesOf3And5Upto(n):
     return  sum_factors(3, n) + sum_factors(5, n) - sum_factors(15, n)
 
-class TestStringMethods(unittest.TestCase):
+class TestSumFizzBuzz(unittest.TestCase):
 
     def test_multiplesUpto0ShouldTotal0(self):
         self.assertEqual(0, sumOfMultiplesOf3And5Upto(0))
@@ -28,4 +28,3 @@ class TestStringMethods(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
